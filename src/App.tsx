@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MuliStep from './components';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h3 style={{textTransform: 'uppercase',color: '#673AB7',  fontWeight: 'normal'}}>
+          Sign Up Your User Account
+        </h3>
+        <h5 style={{fontWeight: 'lighter'}}>Fill all form field to go to next step</h5>
+      </div>
+      <div style={{width: '60%', margin: '0 auto'}}>
+        <MuliStep />
+      </div>
     </div>
-  );
+  );  
 }
 
 export default App;
