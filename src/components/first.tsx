@@ -81,10 +81,10 @@ const StepOne: React.FC<props> = ({ savedValues, handleNext }) => {
       {(formik) => {
         return (
           <Grid container spacing={3}>
-          <Form className={classes.wrapper} autoComplete="off">
-            <Grid item xs={12}>
+            <Form className={classes.wrapper} autoComplete="off">
+              <Grid item xs={12}>
                 <Field
-                  style={{width: '90%'}}
+                  style={{ width: '90%' }}
                   error={formik.errors.email && formik.touched.email}
                   className={classes.fields}
                   name="email"
@@ -92,24 +92,24 @@ const StepOne: React.FC<props> = ({ savedValues, handleNext }) => {
                   label="Email"
                   helperText={<ErrorMessage name="email" />}
                 />
-            </Grid>
-        <Grid item xs={12}>
-            <Field
-              style={{width: '90%'}}
-              error={formik.errors.password && formik.touched.password}
-              className={classes.fields}
-              name="password"
-              as={TextField}
-              label="Password"
-              type="password"
-              helperText={<ErrorMessage name="password" />}
-              />
               </Grid>
-            <button className={classes.button} type="submit">
-              Next
+              <Grid item xs={12}>
+                <Field
+                  style={{ width: '90%' }}
+                  error={formik.errors.password && formik.touched.password}
+                  className={classes.fields}
+                  name="password"
+                  as={TextField}
+                  label="Password"
+                  type="password"
+                  helperText={<ErrorMessage name="password" />}
+                />
+              </Grid>
+              <button className={classes.button} type="submit">
+                Next
             </button>
-          </Form>
-              </Grid>
+            </Form>
+          </Grid>
         );
       }}
     </Formik>

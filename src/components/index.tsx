@@ -20,10 +20,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(1),
   },
   formWrapper: {
-    // display: "flex",
-    // flexDirection: "column",
-    // flexWrap: "wrap",
-    // margin: "0 auto",
     padding: "2vh",
   },
 }));
